@@ -1,10 +1,10 @@
-# 🚗 Sistema de Gerenciamento de Veículos
+# 🚗 Sistema de Gerenciamento de Veículos (CRUD)
 
-## 📌 Descrição
+## 📌 Sobre o Projeto
 
-Este projeto foi desenvolvido com o objetivo de praticar a integração entre **Python** e **SQLite**, simulando um sistema simples de gerenciamento de veículos.
+Este projeto é um sistema simples de gerenciamento de veículos desenvolvido com **Python** e **SQLite**, com foco em praticar operações de banco de dados e lógica de programação.
 
-O sistema permite realizar operações básicas de banco de dados (CRUD), com cadastro, consulta, atualização e remoção de registros.
+A aplicação funciona via terminal e permite realizar operações básicas de CRUD (Create, Read, Update e Delete).
 
 ---
 
@@ -12,67 +12,66 @@ O sistema permite realizar operações básicas de banco de dados (CRUD), com ca
 
 * 📄 Listar veículos cadastrados
 * ➕ Inserir novos veículos
-* ✏️ Atualizar informações dos veículos
+* ✏️ Atualizar informações (ex: preço)
 * ❌ Deletar registros
-* 🧾 Visualizar dados armazenados no banco
+* 🧾 Menu interativo no terminal
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## 🖥️ Prévia do Sistema
+
+Exemplo de execução no terminal:
+
+```
+1 - Listar veículos
+2 - Inserir veículo
+3 - Atualizar veículo
+4 - Deletar veículo
+0 - Sair
+```
+
+---
+
+## 🛠️ Tecnologias Utilizadas
 
 * Python
 * SQLite
-* VS Code
 
 ---
 
-## 📁 Estrutura do Projeto
+## 🧱 Estrutura do Projeto
 
-```bash
-analise-veiculo/
+```
+veiculo-crud-python/
 ├── app/
-│   ├── main.py
-│   ├── conexao.py
+│   ├── main.py        # Arquivo principal (menu do sistema)
+│   ├── conexao.py     # Conexão com o banco de dados
 │
 ├── database/
-│   ├── schema.sql
-│   ├── seed.sql
+│   ├── schema.sql     # Criação das tabelas
+│   ├── seed.sql       # Dados iniciais (opcional)
 │
-├── queries/
-│   ├── select.sql
-│   ├── update.sql
-│   ├── delete.sql
-│
-├── veiculos.db
+├── queries/           # Consultas SQL para testes
+├── veiculos.db        # Banco de dados SQLite
 └── README.md
 ```
 
-## 📊 Exemplo de uso
+---
 
-Ao executar o sistema, será exibido um menu interativo:
+## 💡 Aprendizados
 
-```bash
-1 - Listar veículos
-2 - Inserir
-3 - Atualizar
-4 - Deletar
-5 - Sair
-```
+* Execução de operações CRUD com SQL
+* Integração entre Python e banco de dados
+* Estruturação de um projeto backend simples
+* Manipulação de dados e entrada do usuário
+* Organização de código em múltiplos arquivos
 
 ---
 
-## 🎯 Objetivo do Projeto
+## 🚀 Melhorias Futuras
 
-Este projeto foi desenvolvido para:
-
-* Praticar comandos SQL como `SELECT`, `INSERT`, `UPDATE` e `DELETE`
-* Trabalhar com banco de dados SQLite
-* Integrar Python com banco de dados
-* Desenvolver lógica de programação
-* Simular um sistema simples de CRUD
-
+* Validação de dados
+* Melhorar a interface no terminal
+* Implementar novas consultas SQL
 ---
 
-## 👨‍💻 Autor
-
-Gabriel Fernandes
